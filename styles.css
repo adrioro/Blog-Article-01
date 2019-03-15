@@ -19,20 +19,17 @@ body{
   .c1,.c2,.c3,.c4,.c6,.c7,.c5,.c8, ul{
     width: 100%;
     height: auto;
-    border:1px solid blue;
+
     text-align: center;
     line-height: 33px;
   }
   p{
     padding: 11px;
   }
-  .c1_title{
-    border-bottom: 5px solid rgb(214, 25, 53);
-  }
   h1{
     font-weight: 400;
     text-align: center;
-    color: rgb(214, 25, 53);
+    color: #d14520;
     line-height: 150%;
     font-size: 1.5em;
   }
@@ -47,15 +44,51 @@ body{
   .c1 img{
     width: 100%;
     height:auto;
+    border-bottom: 3px solid #d14520;
   }
-
   .c6 img{
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 25px;
   }
+  .c9{
+    text-align: center;
+    padding:32px;
+  }
+  .backToTop{
+    padding:45px;
+  }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 480px) {
+  .c6 img{
+    width: 65%;
+    height: auto;
+    border-radius: 25px;
+  }
+  .c6{
+    align-self:center; /*Center of all*/
+  }
 
   }
+  @media (min-width: 768px){
+    .c5, .c8{
+      width:20%;
+      height: auto;
+
+    }
+    .c6, .c7{
+      width:30%;
+      height: auto;
+      align-self:center;
+    }
+    .c6 img{
+      width: 65%;
+      height: auto;
+      border-radius: 25px;
+    }
+    .c6{
+      align-self:center;
+    }
+
+    }
