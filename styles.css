@@ -1,39 +1,61 @@
 /* /// LAYOUT /// */
+
 body{
   font-family: 'Raleway', sans-serif, Georgia, Times serif;
   font-weight:300;
-  font-size: 16px;
+  font-size: 20px;
   letter-spacing: 1px;
 }
+@media (min-width: 320px) {
 
-.container {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-}
+  .container, .containerAbout {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    border:1px solid black;
 
-.c1, .c2, .c3{
-  width: 100%;
-  background-color: gray;
-  border:1px solid black;
+  }
+  .c1,.c2,.c3,.c4,.c6,.c7,.c5,.c8, ul{
+    width: 100%;
+    height: auto;
+    border:1px solid blue;
+    text-align: center;
+    line-height: 33px;
+  }
+  p{
+    padding: 11px;
+  }
+  .c1_title{
+    border-bottom: 5px solid rgb(214, 25, 53);
+  }
+  h1{
+    font-weight: 400;
+    text-align: center;
+    color: rgb(214, 25, 53);
+    line-height: 150%;
+    font-size: 1.5em;
+  }
+  h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.2em;
+    padding: 11px;
+  }
+
+  .c1 img{
+    width: 100%;
+    height:auto;
+  }
+
+  .c6 img{
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+  }
 }
 
 @media (min-width: 600px) {
-  .c1 {
-    width: 25%;
-  }
 
-  .c4 {
-    width: 75%;
   }
-
-}
-
-@media (min-width: 800px) {
-  .container {
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
